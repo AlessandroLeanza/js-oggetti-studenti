@@ -124,16 +124,19 @@ function validateMember(nome, cognome, età) {
     console.log(nome)
     console.log(cognome)
     console.log(età)
-    if (nome === '') {
+    if (nome == '') {
         console.log("il nome non è valido")
         return false
-    } else if (cognome === " ") {
+    } else if (cognome === '') {
         console.log("il cognome non è valido")
         return false
     } else if (età === '') {
         console.log("L'età non è valida")
         return false
     }
+    // if (nomee === '' || cognome === '' || età === '') {
+    // 	return false
+    // }
     return true
 }
 
